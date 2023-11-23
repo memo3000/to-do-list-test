@@ -2,37 +2,27 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col justify-between h-screen">
       <div className="flex flex-row">
-        <div className="mt-[38px] mb-[950px] ml-[64px] mr-[1228px]">
-          <Image
-            src="/logo.png"
-            width={148}
-            height={36}
-          />
+        <div className="flex mt-15px ml-60px">
+          Lineups & scores
         </div>
-        <div className="mt-[45px] mb-[955px] ml-[1146px] mr-[259px]">
-          blog
+        <div className="flex mt-30px ml-880px">
+          Lineups
         </div>
-        <div className="mt-[39px] mb-[948px] ml-[1226px] mr-[64px]">
-          <Image
-            src="/connect.png"
-            width={150}
-            height={37}
-          />
+        <div>
+          Scores
+        </div>
+        <div>
+          Lineups & scores
         </div>
       </div>
-      <div className="flex flex-col">
-        <div>
-          {/* 왼쪽 내용 추가 */}
-          <div>
-            <h1> Lorem Ipsum </h1>
-            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
-
-          </div>
+      <div className="flex justify-between">
+        <div className="w-1/2">
+          leagues
         </div>
-        <div>
-          {/* 오른쪽 내용 추가 */}
+        <div className="w-1/2">
+          search
         </div>
       </div>
     </div>
